@@ -1,0 +1,229 @@
+#header {
+    background-image: url(https://websitedemos.net/earth-store-02/wp-content/uploads/sites/1171/2022/10/Banner.jpg);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+    nav {
+        .nav-content{
+            padding: 20px;
+            width: 80%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+
+                li {
+                    a {
+                        color: #000;
+                        font-size: 17px;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                    }
+
+                    i {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+
+
+        .nav-response {
+            display: none;
+            justify-content: space-between;
+            width: 80%;
+            margin: auto;
+
+            button {
+                background-color: black;
+                padding: 10px 12px;
+                border-radius: 10px;
+
+                i {
+                    font-size: 16px;
+                    color: white;
+                }
+            }
+        }
+
+        .navMenu {
+            display: none;
+            width: 80%;
+            margin: auto;
+
+            ul {
+                li {
+                    a {
+                        text-transform: uppercase;
+                        font-weight: 800;
+                        color: #2c541d;
+                        font-size: 15px;
+                        transition: 0.5s all ease;
+
+                        &:hover {
+                            color: rgba(255, 255, 255, 0.4);
+                        }
+                    }
+                }
+            }
+        }
+
+        .show {
+            display: block;
+            transition: 0.5s all ease;
+        }
+
+
+    }
+
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 80vh;
+        gap: 20px;
+
+        h1 {
+            letter-spacing: 20px;
+            color: #2c541d;
+            font-size: 80px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        p {
+            color: #050505;
+            font-size: 40px;
+            font-weight: 200;
+            text-transform: uppercase;
+        }
+
+        button {
+            font-size: 16px;
+            border: none;
+            padding: 15px 40px;
+            font-weight: 500;
+            color: white;
+            text-transform: uppercase;
+            background-color: #74a84a;
+            transition: 0.5s all ease;
+
+            &:hover {
+                background-color: #2c541d;
+                cursor: pointer;
+            }
+        }
+    }
+    .aside-bar{
+        background-color: #fff;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        width: 350px;
+        flex-direction: column;
+        position: fixed;
+        transition: 0.5s all ease;
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        div{
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        button{
+            border: none;
+            background-color: #74a84a;
+            color: #000;
+            padding: 13px 20px;
+            transition: 0.5s all ease;
+            &:hover{
+                background-color: #2c541d;
+                color: #fff;
+            }
+        }
+    }
+    .show-aside{
+        width: 350px !important;
+        display: flex;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 562px) {
+    #header {
+        .header-content {
+            min-height: 80vh;
+            gap: 10px;
+    
+            h1 {
+                letter-spacing: 5px !important;
+                font-size: 50px !important;
+            }
+    
+            p {
+                font-size: 28px !important;
+            }
+    
+            button {
+                font-size: 15px !important;
+                padding: 10px 25px !important;
+            }
+        }
+        nav {
+            .nav-response {
+                padding: 10px;
+                display: flex;
+            }
+
+            .nav-content {
+                display: none
+            }
+        }
+    }
+}
+
+
+@media (min-width: 562px) and (max-width: 768px) {
+    #header {
+        nav {
+            .nav-response {
+                padding: 10px;
+                display: flex;
+            }
+
+            .nav-content {
+                display: none
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+    #header {
+        nav {
+            .nav-response {
+                padding: 10px;
+                display: flex;
+            }
+
+            .nav-content {
+                display: none
+            }
+        }
+    }
+}
+
+
+
